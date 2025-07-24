@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const path = require('path');
 const app = express();
@@ -10,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //routes
 app.get("/",(req,res)=>{
-    res.render('login',{title:'Login'});
+    res.render('dashboard',{title:'Login'});
 });
 
 app.get("/dashboard",(req,res)=>{
